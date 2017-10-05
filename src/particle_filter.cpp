@@ -54,7 +54,7 @@ void ParticleFilter::prediction(double delta_t, double std_pos[], double velocit
 
 	default_random_engine gen;
 
-	for (Particle particle: particles) {
+	for (Particle &particle: particles) {
 
 		double new_x;
 		double new_y;
